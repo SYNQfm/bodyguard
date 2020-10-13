@@ -7,10 +7,9 @@
 
 # Bodyguard Changelog
 
-## v2.4.0
+## v2.3.1
 
-* **Addition:** Adding ability to specify `{module, function}` for plug's value getters
-* **Addition:** Adding default config options for Authorize plug
+* **Addition:** Adding ability to return a resource from authorize
 
 ## v2.3.0
 
