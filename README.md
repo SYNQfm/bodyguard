@@ -51,7 +51,7 @@ end
 
 To implement a policy, add `@behaviour Bodyguard.Policy` to a context, then define `authorize(action, user, params)` callbacks, which must return:
 
-* `:ok` or `true` to permit an action
+* `:ok`, `{:ok, resource}`, or true to permit an action
 * `:error`, `{:error, reason}`, or `false` to deny an action
 
 Don't use these callbacks directly - instead, go through `Bodyguard.permit/4`. This will convert any keyword-list `params` into a map, and will coerce the callback result into a strict `:ok` or `{:error, reason}` result. The default failure `reason` is `:unauthorized` unless specified otherwise in the callback.
